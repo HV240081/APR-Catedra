@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel — Tutorías UDB (Interfaz)</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <header class="site-header d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center gap-3">
+      <img src="../IMG/UDB_horizontal.png" alt="UDB" class="brand-logo">
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="controls card">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;width:100%">
+        <!-- Selector de materia (filtro) -->
+        <label for="subjectSelect" style="font-weight:600;color:#374151">Materia:</label>
+        <select id="subjectSelect" style="padding:8px 10px;border-radius:8px;border:1px solid #e4e7ef;">
+          <!-- Opciones añadidas por JS -->
+        </select>
+
+        <!-- Navegación de día -->
+        <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+          <button id="prevDay" class="nav-btn" aria-label="día anterior">&lt;</button>
+          <input id="datePicker" type="date" />
+          <button id="nextDay" class="nav-btn" aria-label="día siguiente">&gt;</button>
+        </div>
+      </div>
+
+      <div id="prettyDate" class="pretty-date" aria-live="polite" style="margin-top:10px"></div>
+    </section>
+
+    <section class="schedule card" aria-label="Horario de tutorías">
+      <!-- Botón para reservar cupo -->
+      <div style="display:flex;justify-content:flex-end;margin-bottom:10px;">
+        <button id="reserveBtn" class="nav-btn" style="background-color:#28a745;color:white;">Reservar Cupo</button>
+      </div>
+
+      <table id="scheduleTable" class="schedule-table">
+        <!-- Header y filas generadas por JS -->
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Interfaz minimal — Tutorías en línea</small>
+  </footer>
+
+  <script src="../JS/schedule-min.js"></script>
+
+  <!-- Script básico para reservar (simulación) -->
+  <script>
+    const reserveBtn = document.getElementById('reserveBtn');
+    reserveBtn.addEventListener('click', () => {
+      alert('Funcionalidad de reserva aún no implementada. Aquí se conectará con backend.');
+    });
+  </script>
+</body>
+</html>

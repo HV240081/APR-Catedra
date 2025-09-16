@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reservar Cupo — Tutorías UDB</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS del proyecto -->
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center gap-3">
+      <img src="../IMG/UDB_horizontal.png" alt="UDB" class="brand-logo">
+      <h1 class="page-title">Reservar Cupo</h1>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <section class="card reservation-card">
+      <h2 class="reservation-title">Detalle de la Tutoría</h2>
+
+      <div class="reservation-info">
+        <p><strong>Materia:</strong> <span id="res-subject">Álgebra Vectorial y Matrices (ALG501)</span></p>
+        <p><strong>Tutor:</strong> <span id="res-tutor">Dr. Juan Pérez</span></p>
+        <p><strong>Fecha:</strong> <span id="res-date">Lunes, 16 Septiembre 2025</span></p>
+        <p><strong>Hora:</strong> <span id="res-time">10:00 AM - 11:00 AM</span></p>
+        <p><strong>Cupos disponibles:</strong> <span id="res-slots">5</span></p>
+      </div>
+
+      <div class="reservation-actions" style="margin-top:20px; display:flex; gap:15px; justify-content:center;">
+        <button id="btnConfirm" class="btn-reserve">Confirmar Reserva</button>
+        <button id="btnCancel" class="btn-cancel">Cancelar</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <small>Interfaz minimal — Tutorías en línea</small>
+  </footer>
+
+  <!-- JS de la página -->
+  <script>
+    const btnConfirm = document.getElementById('btnConfirm');
+    const btnCancel = document.getElementById('btnCancel');
+
+    btnConfirm.addEventListener('click', () => {
+      alert('¡Cupo reservado con éxito!');
+      // Aquí se podría agregar la lógica para enviar al backend
+    });
+
+    btnCancel.addEventListener('click', () => {
+      window.history.back(); // Regresa al panel anterior
+    });
+  </script>
+</body>
+</html>

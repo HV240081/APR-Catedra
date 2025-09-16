@@ -1,0 +1,294 @@
+/*Login Estilos */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+    background-color: #eef1f6;
+    padding: 15px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header .brand-logo {
+    height: 80px;
+}
+
+.site-header .brand-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1e2a78;
+    margin-left: 15px;
+    margin-bottom: 0;
+    align-self: center; 
+}
+
+h1.form-title {
+    font-family: 'Pacifico', cursive; 
+    font-weight: 400; 
+    font-size: 3rem; 
+    color: #333; 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    width: 90%;
+    gap: 50px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-login {
+    width: auto;
+    padding: 15px 30px;
+    background-color: #6495ed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-login:hover {
+    background-color: #4169e1;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+
+
+/*Home Student Estilos */
+/* === ESTILOS GENERALES === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === HEADER === */
+.site-header {
+  background-color: #eef1f6;
+  padding: 15px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .brand-logo {
+  height: 70px;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1e2a78;
+  margin: 0;
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+.main {
+  flex-grow: 1;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === TARJETAS === */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* === CONTROLES SUPERIORES === */
+.controls label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.controls select,
+.controls input[type="date"] {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.controls select:focus,
+.controls input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.nav-btn {
+  background-color: #6495ed;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #4169e1;
+}
+
+.pretty-date {
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+/* === TABLA DEL HORARIO === */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.schedule-table th {
+  background-color: #f8f9fc;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+}
+
+.schedule-table td {
+  padding: 8px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-table td:hover {
+  background-color: #f1f5ff;
+}
+
+.schedule-table .time-col {
+  font-weight: 600;
+  background-color: #fafafa;
+  border-right: 2px solid #ddd;
+}
+
+.cell.reserved {
+  background-color: #6495ed;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* === FOOTER === */
+.site-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+

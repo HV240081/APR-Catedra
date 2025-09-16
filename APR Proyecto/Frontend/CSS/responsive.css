@@ -1,0 +1,6 @@
+/* Responsive: ocultar imagen en pantallas pequeñas */
+@media (max-width: 768px) {
+    .image-section {
+        display: none;
+    }
+}
